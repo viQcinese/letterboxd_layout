@@ -1,0 +1,1100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button {
+  font-family: sans-serif;
+}
+
+body {
+  background: #14181c url(./img/bg.png) 0 -1px repeat-x;
+  color: rgb(135,150,164);
+  letter-spacing: 1px;;
+  width: 100%;
+}
+
+.container {
+  max-width: 950px;
+  margin: auto;
+  height: 100%;
+}
+
+
+
+
+
+/* HEADER */
+header#main-header {
+  height: 72px;
+  background: rgb(20,24,28);
+}
+
+header#main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header#main-header #logo {
+  height: 60px;
+}
+
+header#main-header .actions {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header#main-header .actions {
+  font-size: 13px
+}
+
+header#main-header .actions .user-action {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header#main-header .actions .user-action img:first-child {
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+header#main-header .actions .user-action strong {
+  text-transform: uppercase;
+}
+
+header#main-header .actions .user-action img:last-child {
+  height: 16px;
+}
+
+header#main-header .actions > strong {
+  margin-left: 20px;
+}
+
+header#main-header .actions > strong:hover {
+  color: white;
+  cursor: pointer;
+}
+
+header#main-header .actions > strong img {
+height: 18px;
+}
+
+header#main-header .actions .button {
+  margin-left: 20px;
+  display: flex;
+}
+
+header#main-header .actions > .button button {
+  height: 24px;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;;
+  outline: none;
+  border: none;
+
+}
+
+header#main-header .actions > .button button > strong {
+  font-size: 18px;
+  font-weight: normal;
+  margin-right: 5px;
+}
+
+header#main-header .actions > .button button:first-child {
+  background-color: rgb(0,176,32);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 0 10px;
+}
+
+header#main-header .actions > .button button:first-child:hover {
+  background-color: rgb(0, 148, 27);
+  cursor: pointer;  
+}
+
+header#main-header .actions > .button button:last-child {
+  background-color: rgb(21,187,50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header#main-header .actions > .button button:last-child:hover {
+  background-color: rgb(0,176,32);
+  cursor: pointer;
+}
+
+header#main-header .actions > .button button:last-child img {
+  height: 18px;
+  padding: 0 3px;
+}
+
+
+
+
+
+/* MESSAGE */
+.message {
+  margin: 40px 0;
+}
+
+.message h2 {
+  font-size: 26px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.message h2 span {
+  color: rgb(255,255, 255);
+  position: relative;
+  cursor: pointer;
+}
+
+.message h2 span::after {
+  content: '';
+  background: rgb(123,138,152);
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+}
+
+.message h2 span:hover::after {
+  background: white;
+}
+
+
+
+
+
+/* NEW */
+section.new {
+  margin-bottom: 50px;
+}
+
+section.new header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(66,82,99);
+  padding-bottom: 3px;
+}
+
+section.new header > span {
+  font-size: 13px;
+}
+
+section.new header > span:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+section.new header div {
+  display: flex;
+}
+
+section.new header div img {
+  height: 15px;
+  margin-right: 3px;
+}
+
+section.new header div span {
+  font-size: 11px;
+}
+
+section.new header div:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+
+
+section.new .card-list {
+  margin-top: 10px;
+  display: flex;
+}
+
+section.new .card-block {
+  width: 155px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+}
+
+section.new .card {
+  border: 1px solid rgb(99,116,133);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+section.new .card::after {
+  content: '';
+  border: 2px solid none;
+  border-radius: 5px;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 100%;
+  transition: 0.2s;
+}
+
+section.new .card:hover::after {
+  content: '';
+  border: 2px solid rgb(0,224,84);
+  border-radius: 5px;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+
+section.new .card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+section.new .card footer {
+  background: rgb(68,85,102);
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+section.new .card footer img {
+  height: 20px;
+  width: 20px;
+  flex: 0;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+section.new .card footer span {
+  font-size: 12px;
+  color: rgb(150,167,184);
+  font-weight: bold;
+}
+
+section.new .card-block > span {
+  font-size: 12px;
+  text-align: end;
+  letter-spacing: 0px;
+  color: rgb(85,102,119);
+  margin: 5px 0;
+}
+
+
+
+
+
+/* BANNER */
+section.banner {
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+
+
+
+
+/* POPULAR */
+section.popular {
+  margin-bottom: 50px;
+}
+
+section.popular header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(66,82,99);
+  padding-bottom: 3px;
+}
+
+section.popular header > span {
+  font-size: 13px;
+}
+
+section.popular header > span:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+section.popular header div {
+  display: flex;
+}
+
+section.popular header div img {
+  height: 15px;
+  margin-right: 3px;
+}
+
+section.popular header div span {
+  font-size: 11px;
+}
+
+section.popular header div:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+
+
+section.popular .card-list {
+  margin-top: 10px;
+  display: flex;
+}
+
+section.popular .card {
+  width: 155px;
+  margin: 0 5px;
+  border: 1px solid rgb(99,116,133);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+section.popular .card::after {
+  content: '';
+  border: 2px solid none;
+  border-radius: 5px;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 100%;
+  transition: 0.2s;
+}
+
+section.popular .card:hover::after {
+  content: '';
+  border: 2px solid rgb(0,224,84);
+  border-radius: 5px;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+
+section.popular .card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+
+
+
+/* NEWS */
+section.news {
+  margin-bottom: 50px;
+}
+
+section.news header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(66,82,99);
+  padding-bottom: 3px;
+}
+
+section.news header > span {
+  font-size: 13px;
+}
+
+section.news header > span:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+section.news header div {
+  display: flex;
+}
+
+section.news header div img {
+  height: 15px;
+  margin-right: 3px;
+}
+
+section.news header div span {
+  font-size: 11px;
+}
+
+section.news header div:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+
+
+section.news .news-card {
+  margin-top: 10px;
+  background: rgb(32,40,48);
+  display: block;
+  border-radius: 5px;
+  display: flex; 
+}
+
+section.news .news-card img {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+}
+
+section.news .news-card .card-text {
+  padding: 20px 30px;
+}
+
+section.news .news-card .card-text h3 {
+  font-size: 22px;
+  color: #fff;
+  transition: color 0.1s;
+  display: inline;
+}
+
+section.news .news-card .card-text h3:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+section.news .news-card .card-text p {
+  font-family: Georgia;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+section.news .news-card .card-text p strong {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+
+section.news .news-card .card-text p strong:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+
+
+
+
+/* REVIEWS */
+section.reviews {
+  margin-bottom: 50px;
+}
+
+section.reviews > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(66,82,99);
+  padding-bottom: 3px;
+}
+
+section.reviews > header > span {
+  font-size: 13px;
+}
+
+section.reviews > header > span:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+section.reviews > header div {
+  display: flex;
+}
+
+section.reviews > header div img {
+  height: 15px;
+  margin-right: 3px;
+}
+
+section.reviews > header div span {
+  font-size: 11px;
+}
+
+section.reviews > header div:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+
+
+section.reviews .review-list {
+  margin-top: 40px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(2, 455px);
+  grid-template-rows: auto;
+  grid-auto-flow: dense;
+  padding-bottom: 30px;
+  align-items: start;
+}
+
+section.reviews .review-list article {
+  align-self: start;
+  justify-self: start;
+  
+}
+
+section.reviews .review-list header {
+  display: flex;
+  align-items: center;
+}
+
+section.reviews .review-list header .poster {
+  width: 80px;
+  height: 120px;
+  position: relative;
+}
+
+section.reviews .review-list header .poster::after {
+  content: '';
+  border: 2px solid none;
+  border-radius: 5px;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 100%;
+  transition: 0.2s;
+}
+
+section.reviews .review-list header .poster:hover::after {
+  content: '';
+  border: 2px solid rgb(0,224,84);
+  border-radius: 5px;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+
+section.reviews .review-list header .poster img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(99,116,133);
+  position: relative;
+}
+
+section.reviews .review-list header .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+section.reviews .review-list header .info .author {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+section.reviews .review-list header .info .author img {
+  height: 24px;
+  width: 24px;
+  border: 1px solid rgb(99,116,133);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+section.reviews .review-list header .info .author span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+section.reviews .review-list header .info h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  color: #fff;
+  margin: 10px 0;
+  transition: 0.1s
+}
+
+section.reviews .review-list header .info h2:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+section.reviews .review-list header .info h2 span {
+  color: rgb(99,116,133);
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+section.reviews .review-list header .info .movie {
+  display: flex;
+  align-items: center;
+}
+
+section.reviews .review-list header .info .movie .rating img {
+  height: 14px;
+  margin: 0 -3px;
+}
+
+section.reviews .review-list header .info .movie .comments {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+} 
+
+section.reviews .review-list header .info .movie .comments:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+section.reviews .review-list header .info .movie .comments img {
+  height: 16px;
+  margin-right: 3px;
+}
+
+section.reviews .review-list header .info .movie .comments span {
+  font-size: 14px;
+  letter-spacing: -1px;
+}
+
+section.reviews .review-list .review-body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  margin: 25px 0;
+}
+
+section.reviews .review-list .review-body p {
+  margin-bottom: 10px;
+}
+
+section.reviews .review-list .review-body p strong {
+  font-weight: normal;
+  color: #fff
+}
+
+section.reviews .review-list .review-body p strong:hover {
+  color: rgb(64,188,244); 
+  cursor: pointer;
+} 
+
+
+
+section.reviews .review-list footer {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(50, 57, 65);
+  padding-bottom: 25px;
+}
+
+section.reviews .review-list footer .like {
+  display: flex;
+  align-items: center;
+}
+
+section.reviews .review-list footer .like:hover {
+  color: rgb(169, 177, 185);
+  cursor: pointer;
+}
+
+section.reviews .review-list footer .like img {
+  height: 20px;
+}
+
+section.reviews .review-list footer .like strong {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+section.reviews .review-list footer span {
+  font-size: 13px;
+  margin-left: 5px;;
+}
+
+
+
+
+
+/* LISTS */
+
+section.lists {
+  margin-bottom: 50px;
+}
+
+section.lists > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(66,82,99);
+  padding-bottom: 3px;
+}
+
+section.lists > header > span {
+  font-size: 13px;
+}
+
+section.lists > header > span:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+section.lists > header div {
+  display: flex;
+}
+
+section.lists > header div img {
+  height: 15px;
+  margin-right: 3px;
+}
+
+section.lists > header div span {
+  font-size: 11px;
+}
+
+section.lists > header div:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+
+
+section.lists .lists-container {
+  margin-top: 30px;
+  display: flex;
+}
+
+section.lists .lists-container .movie-list {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
+section.lists .lists-container .movie-list .movie-cards {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+section.lists .lists-container .movie-list .movie-cards::after {
+  content: '';
+  border: 2px solid none;
+  border-radius: 5px;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  transition: 0.2s;
+}
+
+section.lists .lists-container .movie-list .movie-cards:hover::after {
+  content: '';
+  border: 2px solid rgb(0,224,84);
+  border-radius: 5px;
+  top: -2px;
+  left: -2px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+
+section.lists .lists-container .movie-list .movie-cards .movie {
+  height: 110px;
+  border: 1px solid rgb(99,116,133);
+  border-radius: 5px;
+  margin-left: -32px;
+  position: relative;
+}
+
+section.lists .lists-container .movie-list .movie-cards .movie:last-child {
+  margin-left: 0;
+}
+
+section.lists .lists-container .movie-list .movie-cards .movie img {
+  height: 100%;
+  border-radius: 5px;
+}
+
+section.lists .lists-container .movie-list h2 {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+section.lists .lists-container .movie-list h2:hover {
+  color: rgb(212, 222, 231);
+  cursor: pointer;
+}
+
+section.lists .lists-container .movie-list .info {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+section.lists .lists-container .movie-list .info .author {
+  display: flex;
+  align-items: center;
+}
+
+section.lists .lists-container .movie-list .info .author:hover {
+  color: rgb(171, 179, 185);
+  cursor: pointer;
+}
+
+section.lists .lists-container .movie-list .info .author img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+section.lists .lists-container .movie-list .info .likes {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+section.lists .lists-container .movie-list .info .likes:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+section.lists .lists-container .movie-list .info .likes img {
+  height: 16px;
+  margin-right: 5px;
+}
+
+section.lists .lists-container .movie-list .info .comments {
+  display: flex;
+  align-items: center;
+}
+
+section.lists .lists-container .movie-list .info .comments:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+section.lists .lists-container .movie-list .info .comments img {
+  height: 16px;
+  margin-right: 5px;
+
+}
+
+
+
+
+
+/* SHOWDOWNS */
+section.showdowns {
+  margin-bottom: 50px;
+}
+
+section.showdowns > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(66,82,99);
+  padding-bottom: 3px;
+}
+
+section.showdowns > header > span {
+  font-size: 13px;
+}
+
+section.showdowns > header > span:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+section.showdowns > header div {
+  display: flex;
+}
+
+section.showdowns > header div img {
+  height: 15px;
+  margin-right: 3px;
+}
+
+section.showdowns > header div span {
+  font-size: 11px;
+}
+
+section.showdowns > header div:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+
+
+section.showdowns .showdowns-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  width: 100%;
+}
+
+section.showdowns .showdowns-container .card {
+  width: 100%;
+}
+
+section.showdowns .showdowns-container .card img {
+  width: 100%;
+  border: 1px solid rgb(60, 71, 82);
+  border-radius: 4px;
+}
+
+section.showdowns .showdowns-container .card img:hover {
+  border: 1px solid rgb(85, 88, 92);
+  cursor: pointer;
+}
+
+section.showdowns .showdowns-container .card h3 {
+  font-size: 18px;
+  color: #fff;
+  display: inline;
+  transition: 0.1s;
+}
+
+section.showdowns .showdowns-container .card h3:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+section.showdowns .showdowns-container .card p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+
+
+
+/* NEWS */
+section.news {
+  margin-bottom: 100px;
+}
+
+section.news > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(66,82,99);
+  padding-bottom: 3px;
+}
+
+section.news > header > span {
+  font-size: 13px;
+}
+
+section.news > header > span:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+section.news > header div {
+  display: flex;
+}
+
+section.news > header div img {
+  height: 15px;
+  margin-right: 3px;
+}
+
+section.news > header div span {
+  font-size: 11px;
+}
+
+section.news > header div:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+
+
+section.news .news-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  width: 100%;
+}
+
+section.news .news-container .card {
+  width: 100%;
+}
+
+section.news .news-container .card img {
+  width: 100%;
+  border: 1px solid rgb(60, 71, 82);
+  border-radius: 4px;
+}
+
+section.news .news-container .card img:hover {
+  border: 1px solid rgb(85, 88, 92);
+  cursor: pointer;
+}
+
+section.news .news-container .card h3 {
+  font-size: 18px;
+  color: #fff;
+  display: inline;
+  transition: 0.1s;
+}
+
+section.news .news-container .card h3:hover {
+  color: rgb(64,188,244);
+  cursor: pointer;
+}
+
+section.news .news-container .card p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+
+
+/* FOOTER */
+body > footer {
+  background: rgb(44,52,64);
+  padding: 40px 0px;
+}
+
+body > footer .links {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+footer .links a {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: rgb(184,198,208);
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+body > footer .links a:hover {
+  color: rgb(227, 241, 252);
+  cursor: pointer;
+}
+
+body > footer span {
+  font-size: 12px;
+}
