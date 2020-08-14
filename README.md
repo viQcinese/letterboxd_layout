@@ -1,6 +1,7 @@
 # Letterboxd Layout Clone
 A simple Letterboxd layout clone <br>
 Built with HTML and CSS <br> <br>
+You can find the same layout built with ReactJS in [here] (https://github.com/viQcinese/letterboxd_layout_react)
 <img src="https://github.com/viQcinese/documentation/blob/master/letterboxd_layout/letterboxd_layout.gif?raw=true" width="100%" height="100%"/>
 
 # Installation
